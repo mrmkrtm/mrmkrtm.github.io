@@ -1,0 +1,219 @@
+*{
+	margin-top: -20px;
+	margin: 0;
+	padding: 0;
+	font-family: bodoni;
+}
+
+header{
+
+	background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)), url(images/front-2.jpg);
+	height:120vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	font-size: 8px;
+	font-weight: bold;
+
+}
+.main{
+
+}
+
+ul{
+	list-style-type: none;
+	float: right;
+	margin-top: 25px;
+}
+
+ul li{
+	display: inline-block;
+	padding: 0 0 0 5px;
+}
+
+ul li a{
+	font-family: calibri;
+	text-decoration: none;
+	color: white;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.7s;
+
+}
+
+
+ul li.active a{
+	background-color: white;
+	color: black;
+	font-family: calibri;
+}
+ul li a:hover{
+	background-color: white;
+	color: black;
+}
+.title {
+	position: absolute;
+	top:100%;
+	left:50%;
+	transform: translate(-50%,-50%);
+
+}
+.title h1 {
+	color: white;
+	font-size: 70px;
+	font-family: calibri;
+}
+
+
+
+.more {
+	position: absolute;
+	top:87%;
+	left:51%;
+	transform: translate(-50%,-50%);
+}
+.more a{
+	color: white;
+	font-size: 25px;
+	font-family: calibri;
+}
+
+.button{
+	border: 1px;
+	padding: 10px 30px;
+}
+.button:hover{
+	color: black;
+}
+
+.icon-bar{
+	position:;
+  	left:5%;
+  	bottom: 0%;
+    width: 100%;
+
+
+}
+.icon-bar a {
+	position: relative;
+	top: 50%;
+	left: 10%;
+
+  	display: ;
+  	padding: 5% 9% 2% 9%;
+  	transition: all 1s ease;
+  	color: white;
+  	font-size: 20px;
+	}
+.icon-bar a:hover{
+	background-color: white;
+}
+.card {
+	border: transparent;
+	height: 300px;
+	
+	
+}
+
+div.card{
+	box-shadow: 0px 0px 0px 0px;
+	transform: translate(10%,10%);
+	background-color: transparent;
+	width:90%;
+	text-align: justify;
+}
+.card-title{
+  font-weight: bold;
+  color: white;
+  text-align: left;
+}
+
+#first, html{
+	height: 100%;
+	margin: 0;
+}
+
+.about {
+	background-color: #f57f17;
+	height: 70%;
+
+}
+
+.projects{
+	background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)), url(images/profile.jpg);
+	height:100vh;
+	background-size: cover;
+	background-position: center;
+
+}
+
+/*General*/
+
+button {
+	position: fixed;
+	bottom: 15px;
+	right: 30px;
+	display: ;
+	border-radius: 45%;
+	color: white;
+	background-color: transparent;
+	border: none;
+
+
+}
+button:hover{
+	color: black;
+	background-color: white;
+}
+
+/*Codepen*/
+*,*:before,*:after{
+	box-sizing:border-box;
+}
+
+html, body{
+	background:#f57f17;
+	margin:0;
+}
+
+.folder{
+	/*lowest level*/
+	display:block;
+	margin:100px auto;
+	position:relative;
+	width:3.5em;
+	border-bottom:2em solid #ffab00;
+	border-right:.5em solid transparent;
+}
+
+.folder:before{
+	/*middle level*/
+	content:"\2585"; /*this is the secret, shhhhhh*/
+	text-indent:-0.05em;
+	font-size:6em;
+	color:#ffd740;
+	line-height:.2em;
+	position:absolute;
+	overflow:visible;
+	width:.87em;
+	left:.05em;
+	top:0.1em;
+	background:#fff;
+	transition:.218s ease;
+}
+
+.folder:after{
+	/*highest level*/
+  content:"";
+	position:absolute;
+	width:3.5em;
+	top:.3em;
+	right:-3em;
+	border-bottom:1em solid #ffd740;
+	border-left:.5em solid transparent;
+}
+
+.folder:hover:before{
+	line-height:.4em;
+	top:0;
+}
